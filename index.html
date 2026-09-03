@@ -21,7 +21,7 @@
         }
         .table-container {
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
             background: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -34,8 +34,7 @@
         }
         th, td {
             border: 1px solid #e9ecef;
-            padding: 14px 8px;
-            text-align: center;
+            padding: 14px 12px;
             font-size: 15px;
             word-break: break-word;
         }
@@ -43,9 +42,12 @@
             background-color: #f1f3f5;
             color: #495057;
             font-weight: 600;
+            width: 35%; /* 컬럼 이름 부분 너비 */
+            text-align: center;
         }
         td {
             color: #212529;
+            text-align: left; /* 컬럼 값 부분 좌측 정렬 */
         }
     </style>
 </head>
@@ -53,20 +55,22 @@
 
     <div class="table-container">
         <table>
-            <thead>
-                <tr>
-                    <th>항목 1</th>
-                    <th>항목 2</th>
-                    <th>항목 3</th>
-                    <th>항목 4</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
-                    <td>내용 1</td>
-                    <td>내용 2</td>
-                    <td>내용 3</td>
-                    <td>내용 4</td>
+                    <th>컬럼 1</th>
+                    <td>컬럼 1 값</td>
+                </tr>
+                <tr>
+                    <th>컬럼 2</th>
+                    <td>컬럼 2 값</td>
+                </tr>
+                <tr>
+                    <th>컬럼 3</th>
+                    <td>컬럼 3 값</td>
+                </tr>
+                <tr>
+                    <th>컬럼 4</th>
+                    <td>컬럼 4 값</td>
                 </tr>
             </tbody>
         </table>
