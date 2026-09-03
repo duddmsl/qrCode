@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 보기</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding: 16px;
+        }
+        .table-container {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #e9ecef;
+            padding: 14px 8px;
+            text-align: center;
+            font-size: 15px;
+            word-break: break-word;
+        }
+        th {
+            background-color: #f1f3f5;
+            color: #495057;
+            font-weight: 600;
+        }
+        td {
+            color: #212529;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>항목 1</th>
+                    <th>항목 2</th>
+                    <th>항목 3</th>
+                    <th>항목 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>내용 1</td>
+                    <td>내용 2</td>
+                    <td>내용 3</td>
+                    <td>내용 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
