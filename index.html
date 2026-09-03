@@ -21,7 +21,7 @@
         }
         .table-container {
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
             background: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -34,7 +34,7 @@
         }
         th, td {
             border: 1px solid #e9ecef;
-            padding: 14px 8px;
+            padding: 14px 12px;
             text-align: center;
             font-size: 15px;
             word-break: break-word;
@@ -43,9 +43,11 @@
             background-color: #f1f3f5;
             color: #495057;
             font-weight: 600;
+            width: 35%; /* 항목 제목 부분의 너비 설정 */
         }
         td {
             color: #212529;
+            text-align: left; /* 내용 부분은 좌측 정렬로 가독성 향상 */
         }
     </style>
 </head>
@@ -53,19 +55,21 @@
 
     <div class="table-container">
         <table>
-            <thead>
-                <tr>
-                    <th>항목 1</th>
-                    <th>항목 2</th>
-                    <th>항목 3</th>
-                    <th>항목 4</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
+                    <th>항목 1</th>
                     <td>내용 1</td>
+                </tr>
+                <tr>
+                    <th>항목 2</th>
                     <td>내용 2</td>
+                </tr>
+                <tr>
+                    <th>항목 3</th>
                     <td>내용 3</td>
+                </tr>
+                <tr>
+                    <th>항목 4</th>
                     <td>내용 4</td>
                 </tr>
             </tbody>
